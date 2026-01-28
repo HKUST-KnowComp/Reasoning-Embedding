@@ -1,0 +1,64 @@
+================================================================================
+Accuracy Report
+Generated: 2025-11-21 22:08:10
+================================================================================
+
+qwen3_32b_LiveMathbench_evaluated.jsonl
+--------------------------------------------------------------------------------
+  Total records:     57
+  Correct:           32
+  Incorrect:         25
+  Skipped:           0
+  Error/Not eval:    0
+  Evaluated:         57 (100.0%)
+  Accuracy:          56.14% (excluding skipped)
+  Accuracy (w/ skip):56.14% (treating skipped as wrong)
+
+qwen3_32b_AI-MO_NuminaMath-CoT_cn_k12_outputs_evaluated.jsonl
+--------------------------------------------------------------------------------
+  Total records:     161
+  Correct:           147
+  Incorrect:         7
+  Skipped:           7
+  Error/Not eval:    0
+  Evaluated:         154 (95.7%)
+  Accuracy:          95.45% (excluding skipped)
+  Accuracy (w/ skip):91.30% (treating skipped as wrong)
+
+qwen3_32b_HuggingFaceH4_MATH-500_outputs_evaluated.jsonl
+--------------------------------------------------------------------------------
+  Total records:     479
+  Correct:           363
+  Incorrect:         1
+  Skipped:           115
+  Error/Not eval:    0
+  Evaluated:         364 (76.0%)
+  Accuracy:          99.73% (excluding skipped)
+  Accuracy (w/ skip):75.78% (treating skipped as wrong)
+
+qwen3_32b_openai_gsm8k_outputs_evaluated.jsonl
+--------------------------------------------------------------------------------
+  Total records:     500
+  Correct:           464
+  Incorrect:         7
+  Skipped:           29
+  Error/Not eval:    0
+  Evaluated:         471 (94.2%)
+  Accuracy:          98.51% (excluding skipped)
+  Accuracy (w/ skip):92.80% (treating skipped as wrong)
+
+================================================================================
+OVERALL
+================================================================================
+  Total records:     1197
+  Correct:           1006
+  Incorrect:         40
+  Skipped:           151
+  Error/Not eval:    0
+  Evaluated:         1046 (87.4%)
+  Accuracy:          96.18% (excluding skipped)
+  Accuracy (w/ skip):84.04% (treating skipped as wrong)
+
+================================================================================
+
+Report saved to: /csproject/t3_sjchenaa/reasoning-embedding/Qwen3-32B-COT/accuracy_report_20251121_220810.txt

@@ -1,0 +1,3 @@
+[submodule "train/gritlm-re"]
+	path = train/gritlm-re
+	url = https://github.com/lucaswychan/gritlm-re.git
