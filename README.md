@@ -2,7 +2,7 @@
 
 # Do Reasoning Models Enhance Embedding Models?
 
-<p align="center">🏆  <a href="https://github.com/lucaswychan">Arxiv Paper</a>&nbsp&nbsp | &nbsp&nbsp🤗 <a href="https://huggingface.co/collections/lucaswychan/reasoning-embedding">Hugging Face</a></p> 
+<p align="center">🏆  <a href="https://arxiv.org/abs/2601.21192">Arxiv Paper</a>&nbsp&nbsp | &nbsp&nbsp🤗 <a href="https://huggingface.co/collections/lucaswychan/reasoning-embedding">Hugging Face</a></p> 
 
 <br/>
 <img src="assests/re-thumbnail.png" alt="thumbnail" width="400">
@@ -21,7 +21,7 @@
 
 ## 📑 News
 
-**[2026.01.31]** Paper published on Arxiv! Models and data are available on [HuggingFace](https://huggingface.co/collections/lucaswychan/reasoning-embedding).
+**[2026.01.30]** Our paper is published on [Arxiv](https://arxiv.org/abs/2601.21192)! Models and data are available on [HuggingFace](https://huggingface.co/collections/lucaswychan/reasoning-embedding).
 
 ## 🚀 Quick Start
 
@@ -317,11 +317,14 @@ python3 evaluation/summary.py \
 If you find this work useful, please cite our paper:
 
 ```bibtex
-@article{chan2026reasoning,
-  title={Do Reasoning Models Enhance Embedding Models?},
-  author={Wun Yu Chan and others},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2026}
+@misc{chan2026reasoningmodelsenhanceembedding,
+      title={Do Reasoning Models Enhance Embedding Models?}, 
+      author={Wun Yu Chan and Shaojin Chen and Huihao Jing and Kwun Hang Lau and Elton Chun-Chai Li and Zihao Wang and Haoran Li and Yangqiu Song},
+      year={2026},
+      eprint={2601.21192},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2601.21192}, 
 }
 ```
 
