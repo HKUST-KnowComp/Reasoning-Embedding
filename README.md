@@ -2,7 +2,18 @@
 
 # Do Reasoning Models Enhance Embedding Models?
 
-<p align="center">🏆  <a href="https://arxiv.org/abs/2601.21192">Arxiv Paper</a>&nbsp&nbsp | &nbsp&nbsp🤗 <a href="https://huggingface.co/collections/lucaswychan/reasoning-embedding">Hugging Face</a></p> 
+<p align="center">
+  <a href="https://arxiv.org/abs/2601.21192">
+    <img alt="ArXiv" src="https://img.shields.io/badge/Paper-ArXiv%3A2601.21192-b31b1b.svg?style=flat-rounded&logo=arxiv&logoColor=white">
+  </a>
+  <a href="https://huggingface.co/collections/lucaswychan/reasoning-embedding">
+    <img alt="Hugging Face Collection" src="https://img.shields.io/badge/HF-Reasoning--Embedding-blueviolet?style=flat-rounded&logo=huggingface">
+  </a>
+  <img alt="Python" src="https://img.shields.io/badge/python-3.12%2B-blue.svg?style=flat-rounded&logo=python">
+  <a href="https://huggingface.co/blog/transformers-v5">
+    <img alt="Transformers" src="https://img.shields.io/badge/transformers-%3E%3D5.0.0-yellow?style=flat-rounded&logo=pypi">
+  </a>
+</p>
 
 <br/>
 <img src="assests/re-thumbnail.png" alt="thumbnail" width="400">
@@ -51,11 +62,11 @@ pip install flash-attn --no-build-isolation
 **⚠️ Important:** Enable bidirectional attention (required for embedding models):
 
 ```bash
-# For transformers>=5.0.0 (default in requirements.txt and recommended)
+# Method 1: For transformers>=5.0.0 (default in requirements.txt and recommended.)
 cp models/modeling_qwen2.py .venv/lib/python3.12/site-packages/transformers/models/qwen2/modeling_qwen2.py
 cp models/modeling_qwen3.py .venv/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py
 
-# For transformers<5.0.0 (unless you manually changed the version, otherwise you can ignore it.)
+# Method 2: For transformers<5.0.0 (unless you manually changed the version, otherwise you can ignore it.)
 cp models/modeling_qwen2_v4.py .venv/lib/python3.12/site-packages/transformers/models/qwen2/modeling_qwen2.py
 cp models/modeling_qwen3_v4.py .venv/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py
 ```
@@ -64,7 +75,7 @@ cp models/modeling_qwen3_v4.py .venv/lib/python3.12/site-packages/transformers/m
 
 ### Bidirectional Attention for Embedding Models
 
-Embedding models require bidirectional attention, which is achieved by setting `is_causal=False` in the model's forward pass. We provide modified `modeling_qwen2.py` and `modeling_qwen3.py` files with the necessary changes.
+Embedding models require bidirectional attention, which is achieved by setting `is_causal=False` in the model's forward pass. We provide modified [`modeling_qwen2.py`](models/modeling_qwen2.py) and [`modeling_qwen3.py`](models/modeling_qwen3.py) files with the necessary changes.
 
 **What we changed:** Added an `is_causal` argument to all `forward` methods and set `is_causal=False` by default in the `XXXModel` class. Example modification:
 
