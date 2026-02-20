@@ -1,6 +1,10 @@
 # Qwen3-32B Math Reasoning Outputs
 
-This directory contains the output results from running Qwen3-32B on various math reasoning datasets with Chain-of-Thought (CoT) reasoning and answer evaluation.
+This directory contains the output results from running Qwen3-32B on various math reasoning datasets with Chain-of-Thought (CoT) reasoning and answer evaluation. All the datasets are stored on HugginFace:
+
+Easy-level: https://huggingface.co/datasets/lucaswychan/CoT-Easy-Reasoning-Embedding  
+Moderate-level: https://huggingface.co/datasets/lucaswychan/CoT-Moderate-Reasoning-Embedding  
+Hard-level: https://huggingface.co/datasets/lucaswychan/CoT-Hard-Reasoning-Embedding
 
 ## Directory Structure
 
@@ -24,8 +28,6 @@ outputs/
 | **NuminaMath cn_k12** | Moderate | 161 | 154 (95.7%) | 95.45% | 91.30% | Chinese K-12 curriculum math problems |
 | **LiveMathBench** | Hard | 57* | 57 (100%) | 56.14% | 56.14% | Recent hard competition problems |
 | **OVERALL** | - | **1197** | **1046 (87.4%)** | **96.18%** | **84.04%** | Combined statistics |
-
-\* LiveMathBench: Only 57 out of 100 problems completed (in progress). **Note:** LiveMathBench generation runs without CoT token limits to allow extremely long reasoning chains for hard problems.
 
 ## Data Format
 
