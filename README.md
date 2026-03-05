@@ -39,9 +39,8 @@
 Clone the repository and initialize the submodule:
 
 ```bash
-git clone https://github.com/lucaswychan/reasoning-embedding.git
+git clone --recurse-submodules https://github.com/lucaswychan/reasoning-embedding.git
 cd reasoning-embedding
-git submodule update --init --recursive
 ```
 
 Install dependencies using either `uv` (recommended) or `pip`:
